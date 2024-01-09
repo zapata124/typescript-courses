@@ -34,6 +34,12 @@ module.exports = {
     'prefer-const': 'error',
   },
   overrides: [
+    { 
+      files: ['src/utils/**/*.{ts,tsx,mts,cts}'],
+      rules: {
+        "@typescript-eslint/strict-boolean-expressions": "error",
+      }
+    },
     {
       /**
        * ESLINT CONFIG
